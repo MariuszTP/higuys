@@ -1,0 +1,88 @@
+.navbar {
+  outline: 1px solid yellow;
+  outline-offset: -5px;
+  background-color: red;
+  padding: 20px 0px;
+  margin-bottom: 5px;
+}
+
+.phone_number, .email_navbar{
+  color: yellow;
+}
+
+.header {
+  height: 280px;
+  background-color: red;
+  font-size: 40px;
+  text-shadow: 10px 10px 8px yellow;
+}
+
+#ramka {
+  outline: 2px solid yellow;
+  outline-offset: -15px;
+  padding-bottom: 150px;
+  padding-top: 50px;
+  text-align: center;
+  color: yellow;
+}
+
+.guys {
+  position: relative;
+  animation-name: example;
+  animation-duration: 6s;
+}
+  
+.courses {
+  position: relative;
+  animation-name: example;
+  animation-duration: 8s;
+}
+
+.menu1 {
+  left: 20vw;
+  bottom: 50px;
+}
+
+.menu2 {
+  left: 30vw;
+  bottom: 50px;
+}
+
+.menu3 {
+  left: 40vw;
+  bottom: 50px;
+}
+.menu4 {
+  left: 50vw;
+  bottom: 50px;
+}
+
+.menu1, .menu2, .menu3, .menu4 {
+  position: relative;
+  outline:1px solid yellow;
+  color: yellow;
+  padding: 5px;
+  border-radius: 5px;
+  font-style: italic;
+  display: inline;
+}  
+.menu4:hover, .menu3:hover, .menu2:hover, .menu1:hover {
+  background-color: yellow;
+  color: red;
+  /* font-weight: 900; */
+}
+@keyframes example {
+  0%   {background-color:transparent; left:-800px; top:0px;}
+  100%  { left:00px; top:0px;}
+}
+.new_york {
+  color: yellow;
+}
+
+.content_text {
+  color: rgba(255,250,80,255);
+}
+
+
+
+

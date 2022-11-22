@@ -1,0 +1,46 @@
+{% extends 'base1.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+
+<div class="container position-absolute">
+  <p class = "menu1"> Materials</p>        
+  <p class = "menu2"> About</p>              
+  <p class = "menu3"> Program</p>         
+  <p class = "menu4"> News</p> 
+</div>
+
+<div class="container">
+  <div class="position-relative">
+    <img src="{% static 'bpage/images/USA.jpg' %}" class="img-fluid" alt="...">
+    <div class="position-absolute bottom-0 start-50 fs-5 new_york text  translate-middle-x">New York</div>
+  </div>
+<!--   <div id="header-text-one" class="fs-5 text text-dark translate-middle-x">Hi guys!</div>
+ -->  
+
+</div>
+
+
+
+<div class="container content_text" style="background-color: rgba(52,59,67,255)">
+
+
+  <h1 class="fs-1 pt-5 text text-center">Zapraszamy na zajecia</h1>
+    <ul>
+      <p class="text text-center">Indywidualne</p>
+      <p class="text text-center">Dla dorosłych</p>
+      <p class="text text-center">dla dzieci</p>
+    </ul>
+  
+
+
+</div>
+
+
+
+
+  {% endblock %}
+

@@ -33,17 +33,25 @@
   color: yellow;
 }
 
+p.guys {
+  font-size: 10px;
+}
+
 .guys {
   position: relative;
   animation-name: example;
   animation-duration: 6s;
+  font-size: 40px;
+
 }
   
 .courses {
   position: relative;
   animation-name: example;
   animation-duration: 8s;
+
 }
+
 
 
 

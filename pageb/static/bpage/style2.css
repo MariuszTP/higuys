@@ -43,18 +43,14 @@ p {
 
 .menu1 {
   position: relative;
-
   outline: 1px solid yellow;
   color: yellow;
-
   border-radius: 5px;
   font-style: italic;
 }
 
-
 .menu2 {
   position: relative;
- 
   outline:1px solid yellow;
   color: yellow;
   padding: 5px;

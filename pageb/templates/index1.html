@@ -6,41 +6,101 @@
 
 
 
-<div class="container position-absolute">
-  <p class = "menu1"> Materials</p>        
-  <p class = "menu2"> About</p>              
-  <p class = "menu3"> Program</p>         
-  <p class = "menu4"> News</p> 
-</div>
+
 
 <div class="container">
   <div class="position-relative">
     <img src="{% static 'bpage/images/USA.jpg' %}" class="img-fluid" alt="...">
-    <div class="position-absolute bottom-0 start-50 fs-5 new_york text  translate-middle-x">New York</div>
+    <!-- <div class="position-absolute bottom-0 start-50 fs-5 new_york text  translate-middle-x">New York</div> -->
   </div>
 <!--   <div id="header-text-one" class="fs-5 text text-dark translate-middle-x">Hi guys!</div>
  -->  
-
 </div>
 
+<div class="container content_text d-none d-sm-block" style="background-color: rgba(52,59,67,255)">
+  <h1 class="fs-1 pt-5 pb-5 text text-center">Zapraszamy na zajecia</h1>
 
+  <div class="row row-cols-1 row-cols-md-2 ">
+     
+    <div class="col pt-3 text-center" >
+      <div class="position-relative">
+        <div class="tooltip1"><img src="{% static 'bpage/images/KIDS1.jpg' %}" class="img-fluid" alt="...">
+        <div class="position-absolute bottom-0 start-50 fs-1 text translate-middle-x tooltip2" style="width: 100%" id="nauka">Dla dzieci</div>
+        </div>
+      </div>
+    </div>
 
-<div class="container content_text" style="background-color: rgba(52,59,67,255)">
-
-
-  <h1 class="fs-1 pt-5 text text-center">Zapraszamy na zajecia</h1>
-    <ul>
-      <p class="text text-center">Indywidualne</p>
-      <p class="text text-center">Dla dorosłych</p>
-      <p class="text text-center">dla dzieci</p>
-    </ul>
+    <div class="col pt-3  text-center" >
+      <div class="position-relative">
+        <div class="tooltip1"><img src="{% static 'bpage/images/Beginners1.jpg' %}" class="img-fluid" alt="...">
+        <div class="position-absolute bottom-0 start-50 fs-1 text translate-middle-x tooltip2" id="nauka">Dla początkujących</div>
+        </div>
+      </div>
+    </div>
   
+    <div class="col pt-3  text-center" >
+      <div class="position-relative">
+        <div class="tooltip1"><img src="{% static 'bpage/images/FUN1.jpg' %}" class="img-fluid" alt="...">
+        <div class="position-absolute bottom-0 start-50 fs-1 text translate-middle-x tooltip2" id="nauka">Dla zabawy</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col pt-3 text-center" >
+      <div class="position-relative">
+        <div class="tooltip1"><img src="{% static 'bpage/images/NYT21.jpg' %}"  class="img-fluid" alt="...">
+        <div class="position-absolute bottom-0 start-50 fs-1 text translate-middle-x tooltip2"  id="nauka">Dla zaawansowanych</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
+<div class="container content_text d-block d-sm-none" style="background-color: rgba(52,59,67,255)">
+  <h1 class="fs-1 pt-5 pb-5 text text-center">Zapraszamy na zajecia</h1>
+
+  <div class="row row-cols-1 row-cols-md-2 ">
+     
+    <div class="col pt-3 text-center" >
+      <div class="position-relative">
+        <div ><img src="{% static 'bpage/images/KIDS1.jpg' %}" class="img-fluid" alt="...">
+        <div class="position-absolute bottom-0 start-50 fs-1 text translate-middle-x " style="width: 100%" id="nauka">Dla dzieci</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col pt-3  text-center" >
+      <div class="position-relative">
+        <div ><img src="{% static 'bpage/images/Beginners1.jpg' %}" class="img-fluid" alt="...">
+        <div class="position-absolute bottom-0 start-50 fs-1 text translate-middle-x " id="nauka">Dla początkujących</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col pt-3  text-center" >
+      <div class="position-relative">
+        <div ><img src="{% static 'bpage/images/FUN1.jpg' %}" class="img-fluid" alt="...">
+        <div class="position-absolute bottom-0 start-50 fs-1 text translate-middle-x " id="nauka">Dla zabawy</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col pt-3 text-center" >
+      <div class="position-relative">
+        <div ><img src="{% static 'bpage/images/NYT21.jpg' %}"  class="img-fluid" alt="...">
+        <div class="position-absolute bottom-0 start-50 fs-1 text translate-middle-x"  id="nauka">Dla zaawansowanych</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 
 
 
-  {% endblock %}
 
+
+{% endblock %}
+
+ 

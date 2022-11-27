@@ -6,6 +6,13 @@
   margin-bottom: 5px;
 }
 
+.navbar-toggler {
+  border-color: yellow;
+  outline: 2px solid yellow;
+}
+
+
+
 .phone_number, .email_navbar{
   color: yellow;
 }
@@ -38,6 +45,43 @@
   animation-duration: 8s;
 }
 
+
+
+#ram:hover {
+  background-color: yellow;
+  padding: 5px;
+  color: red;
+  
+  /* font-weight: 900; */
+}
+
+#nav {
+  outline:1px solid yellow;
+  color: yellow;
+  border-radius: 5px;
+  padding-right: -20px;
+  font-style: italic;
+  padding-right: -60px;
+  display: inline;
+}  
+
+#nav:hover {
+  background-color: yellow;
+  color: red;
+  /* font-weight: 900; */
+}
+
+.menu {
+  position: relative;
+
+  outline: 1px solid yellow;
+  color: yellow;
+
+  border-radius: 5px;
+  font-style: italic;
+}
+
+
 .menu1 {
   left: 20vw;
   bottom: 50px;
@@ -64,7 +108,7 @@
   padding: 5px;
   border-radius: 5px;
   font-style: italic;
-  display: inline;
+ 
 }  
 .menu4:hover, .menu3:hover, .menu2:hover, .menu1:hover {
   background-color: yellow;
@@ -83,6 +127,47 @@
   color: rgba(255,250,80,255);
 }
 
+.nauka1 {
+  position: relative;
+  outline: 5px solid rgb(141, 24, 24);
+  /* padding-top: 100px; */
+  background-color: rgba(52,59,67,255);
+  opacity: 0.4;
+  max-width: auto;
+  top: 100px; 
+}
+
+#nauka {
+   /* padding-top: 100px; */
+  background-color: grey;
+  opacity: 0.8;
+  width: 100%;
+
+ 
+}
+
+#nauka:hover {
+  background-color: BLACK;
+
+}
+
+/* tool tip */
 
 
+.tooltip1 {
+	display: inline-block;
+	position: relative;
+	margin: 50px;
+}
 
+.tooltip2  {
+	visibility: hidden;
+}
+
+.contents  {
+	visibility: hidden;
+}
+
+.tooltip1:hover  .tooltip2 {
+  visibility: visible;
+}

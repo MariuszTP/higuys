@@ -11,8 +11,6 @@
   outline: 2px solid yellow;
 }
 
-
-
 .phone_number, .email_navbar{
   color: yellow;
 }
@@ -21,6 +19,13 @@
   height: 280px;
   background-color: red;
   font-size: 40px;
+  text-shadow: 10px 10px 8px yellow;
+}
+
+.headersm {
+  height: 280px;
+  background-color: red;
+  font-size: 8vw;
   text-shadow: 10px 10px 8px yellow;
 }
 
@@ -33,27 +38,18 @@
   color: yellow;
 }
 
-p.guys {
-  font-size: 10px;
-}
 
 .guys {
   position: relative;
   animation-name: example;
   animation-duration: 6s;
-  font-size: 40px;
-
 }
   
 .courses {
   position: relative;
   animation-name: example;
   animation-duration: 8s;
-
 }
-
-
-
 
 #ram:hover {
   background-color: yellow;

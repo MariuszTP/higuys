@@ -44,35 +44,6 @@
   border-radius: 5px;
   font-style: italic;
 }
-.menu1 {
-  left: 20vw;
-  bottom: 50px;
-}
-.menu2 {
-  left: 30vw;
-  bottom: 50px;
-}
-.menu3 {
-  left: 40vw;
-  bottom: 50px;
-}
-.menu4 {
-  left: 50vw;
-  bottom: 50px;
-}
-.menu1, .menu2, .menu3, .menu4 {
-  position: relative;
-  outline:1px solid yellow;
-  color: yellow;
-  padding: 5px;
-  border-radius: 5px;
-  font-style: italic;
-}  
-.menu4:hover, .menu3:hover, .menu2:hover, .menu1:hover {
-  background-color: yellow;
-  color: red;
-  /* font-weight: 900; */
-}
 
 .header {
   height: 180px;
@@ -145,4 +116,15 @@
 
 #nauka:hover {
  background-color: BLACK;
+}
+
+
+.btmp img:last-child {
+  display: none;  
+}
+.btmp:hover img:last-child {
+  display: block;  
+}
+.btmp:hover img:first-child {
+  display: none;  
 }

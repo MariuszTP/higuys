@@ -8,55 +8,15 @@
 
 .navbar-toggler {
   border-color: yellow;
-  outline: 2px solid yellow;
+  outline: 1px solid yellow;
+}
+
+.navbar-toggler:hover {
+  outline: 3px solid yellow;
 }
 
 .phone_number, .email_navbar{
   color: yellow;
-}
-
-.header {
-  height: 280px;
-  background-color: red;
-  font-size: 40px;
-  text-shadow: 10px 10px 8px yellow;
-}
-
-.headersm {
-  height: 280px;
-  background-color: red;
-  font-size: 8vw;
-  text-shadow: 10px 10px 8px yellow;
-}
-
-#ramka {
-  outline: 2px solid yellow;
-  outline-offset: -15px;
-  padding-bottom: 150px;
-  padding-top: 50px;
-  text-align: center;
-  color: yellow;
-}
-
-
-.guys {
-  position: relative;
-  animation-name: example;
-  animation-duration: 6s;
-}
-  
-.courses {
-  position: relative;
-  animation-name: example;
-  animation-duration: 8s;
-}
-
-#ram:hover {
-  background-color: yellow;
-  padding: 5px;
-  color: red;
-  
-  /* font-weight: 900; */
 }
 
 #nav {
@@ -68,7 +28,7 @@
   padding-right: -60px;
   display: inline;
 }  
-
+  /*   hovering menu */
 #nav:hover {
   background-color: yellow;
   color: red;
@@ -77,25 +37,21 @@
 
 .menu {
   position: relative;
-
+  margin-top: 5px;
+  margin-bottom: 5px;
   outline: 1px solid yellow;
   color: yellow;
-
   border-radius: 5px;
   font-style: italic;
 }
-
-
 .menu1 {
   left: 20vw;
   bottom: 50px;
 }
-
 .menu2 {
   left: 30vw;
   bottom: 50px;
 }
-
 .menu3 {
   left: 40vw;
   bottom: 50px;
@@ -104,7 +60,6 @@
   left: 50vw;
   bottom: 50px;
 }
-
 .menu1, .menu2, .menu3, .menu4 {
   position: relative;
   outline:1px solid yellow;
@@ -112,52 +67,74 @@
   padding: 5px;
   border-radius: 5px;
   font-style: italic;
- 
 }  
 .menu4:hover, .menu3:hover, .menu2:hover, .menu1:hover {
   background-color: yellow;
   color: red;
   /* font-weight: 900; */
 }
-@keyframes example {
-  0%   {background-color:transparent; left:-800px; top:0px;}
-  100%  { left:00px; top:0px;}
+
+.header {
+  height: 180px;
+  background-color: red;
+  font-size: 40px;
+  text-shadow: 10px 10px 8px yellow;
 }
-.new_york {
+.headersm {
+  height: 180px;
+  background-color: red;
+  font-size: 10vw;
+  text-shadow: 5px 5px 5px yellow;
+}
+#ramka {
+  outline: 1px solid yellow;
+  outline-offset: -10px;
+  padding-top: 45px;
+  text-align: center;
   color: yellow;
 }
 
+.guys {
+  position: relative;
+  animation-name: motion;
+  animation-duration: 4s;
+}
+.guyssm {
+  position: relative;
+  animation-name: motion1;
+  animation-duration: 3s;
+}
+@keyframes motion {
+  0%   {background-color:transparent; left:-1200px; top:0px;}
+  100%  { left:00px; top:0px;}
+}
+@keyframes motion1 {
+  0%   {background-color:transparent; left:-500px; top:0px;}
+  100%  { left:00px; top:0px;}
+}
+
+.new_york {
+  color: yellow;
+}
+/*   For zapraszamy na zajecia */
 .content_text {
   color: rgba(255,250,80,255);
 }
 
-.nauka1 {
-  position: relative;
-  outline: 5px solid rgb(141, 24, 24);
-  /* padding-top: 100px; */
-  background-color: rgba(52,59,67,255);
-  opacity: 0.4;
-  max-width: auto;
-  top: 100px; 
-}
+
 
 #nauka {
    /* padding-top: 100px; */
   background-color: grey;
   opacity: 0.8;
   width: 100%;
-
- 
 }
 
 #nauka:hover {
   background-color: BLACK;
-
 }
 
-/* tool tip */
-
-
+/* for pictures positioning*/
 .tooltip1 {
 	display: inline-block;
 	position: relative;
@@ -165,10 +142,6 @@
 }
 
 .tooltip2  {
-	visibility: hidden;
-}
-
-.contents  {
 	visibility: hidden;
 }
 

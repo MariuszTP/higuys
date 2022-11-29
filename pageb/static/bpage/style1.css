@@ -121,19 +121,6 @@
   color: rgba(255,250,80,255);
 }
 
-
-
-#nauka {
-   /* padding-top: 100px; */
-  background-color: grey;
-  opacity: 0.8;
-  width: 100%;
-}
-
-#nauka:hover {
-  background-color: BLACK;
-}
-
 /* for pictures positioning*/
 .tooltip1 {
 	display: inline-block;
@@ -147,4 +134,15 @@
 
 .tooltip1:hover  .tooltip2 {
   visibility: visible;
+}
+
+#nauka {
+  /* padding-top: 100px; */
+ background-color: grey;
+ opacity: 0.8;
+ width: 100%;
+}
+
+#nauka:hover {
+ background-color: BLACK;
 }

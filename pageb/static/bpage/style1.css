@@ -43,6 +43,7 @@
   color: yellow;
   border-radius: 5px;
   font-style: italic;
+  text-decoration: none;
 }
 
 .header {

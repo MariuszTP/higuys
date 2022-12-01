@@ -36,7 +36,7 @@ def main(request):
         send_mail(data['subject'], message, '', ['turekpython@gmail.com'])
        
 
-    return render(request, 'index.html')
+    return render(request, 'index1.html')
 
 
     

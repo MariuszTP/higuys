@@ -23,10 +23,10 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', main1, name='base1'),
+    path('', main1, name='main'),
     path('main2', main2, name='base'),
     path('a', main, name='main'),
-    path('g1', gallery1, name='gallery1'),
+    path('g1', gallery1, name='gallery11'),
     path('g2', gallery2, name='gallery2'),
     path('g3', gallery3, name='gallery3'),
     path('g4', gallery4, name='gallery4'),

@@ -5,6 +5,9 @@ from .models import *
 # Register your models here.
 
 
+from .models import Kategoria
+admin.site.register(Kategoria)
+
 from .models import Gallery1
 admin.site.register(Gallery1)
 

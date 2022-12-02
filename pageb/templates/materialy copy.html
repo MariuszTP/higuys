@@ -4,16 +4,24 @@
 
 {% block content %}
 
-
+<!-- menu -->
 <div class="container  d-grid gap-3"  style="background-color: rgba(52,59,67,255)">
-  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 align-items-center">
+  <div class="row row-cols-2  row-cols-lg-3 row-cols-xxl-4 align-items-center">
+
+    <a href="{% url 'materialy' %}" class="list-group-item list-group-item-action " aria-current="true">Wyświetl wszystko :)</a>
+
+    {% for kategoria in kategoria %}
+    <a href="{% url 'materialy' %}?kategoria={{kategoria.id}}" class="list-group-item list-group-item-action">{{kategoria.name}}</a>
+    {% endfor %}
+
 
     {% for product in products%}
     
       <div class="col">
         <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal{{product.pk}}">
           <p class="text-center mt-5">{{ product.name }} </p>
-          <img src="{{ product.image.url }}" class="figure-img mx-auto d-block rounded  mb-2" height="200px">
+                <!--           <img src="{{ product.image.url }}" class="figure-img mx-auto d-block rounded  mb-2" height="200px"> -->
+          <img src="{{ product.image.url }}" class="figure-img mx-auto d-block rounded  mb-2" width="100%;">
         </a>
       </div>
 
@@ -31,7 +39,6 @@
               <img src="{{ product.image.url }}" class="figure-img img-fluid rounded" width="100%" alt="...">
               {{ product.description }}
             
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div> 
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -42,10 +49,6 @@
     {% endfor %}
   </div>
 </div>
-
-
-
-
 
 
 

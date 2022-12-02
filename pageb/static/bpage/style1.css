@@ -129,3 +129,21 @@
 .btmp:hover img:first-child {
   display: none;  
 }
+
+/* materiały */
+
+.materialy {
+
+  background-color: red;
+  height: auto;
+  text-shadow: 10px 10px 8px yellow;
+  outline: 1px solid yellow;
+  outline-offset: -10px;
+/*   padding-top: 45px; */
+  text-align: center;
+  color: yellow;
+  padding-bottom: 15px;
+
+}
+
+

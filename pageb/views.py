@@ -65,4 +65,14 @@ def gallery5(request):
     return render(request, 'gallery5.html', context)
 
 
-   
+def materialy(request):
+    kategoria = Kategoria.objects.all()
+    kategory_id = request.GET.get('kategoria')
+    if kategory_id:
+        products = Gallery1.objects.filter(kategoria=kategory_id)
+    else:
+        products = Gallery1.objects.all()
+    context = {'products': products, 'kategoria': kategoria}
+    return render(request, 'materialy.html', context)
+
+

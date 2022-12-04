@@ -146,4 +146,14 @@
 
 }
 
+.btn {
+  color: yellow;
+  background-color: red;
+}
+
+.btn:hover {
+
+  color:red;
+  background-color: yellow;
+}
 

@@ -9,14 +9,14 @@
   <div class="row justify-content-center">
 
     <div class="col-sm-5 col-md-4 text-center pe-3 ps-4" " >
-      <a href="{% url 'materialy' %}" id = "nav" class=" me-2 mx-auto d-block mt-3 menu">Wyświetl wszystko :)</a>
+      <a href="{% url 'materialy' %}"  class=" btn m-1 pomoc btn-outline-warning me-2 mx-auto d-block mt-3">Wyświetl wszystko :)</a>
     </div>
     
     <div class="col-12 pe-4 ps-4"  >
       <div class="row row-cols-2  row-cols-lg-4 row-cols-xxl-5 align-items-center">
         {% for kategoria in kategoria %}
           <div class = "col">
-            <a href="{% url 'materialy' %}?kategoria={{kategoria.id}}" id = "nav" class="  text-center  mx-auto d-block menu">{{kategoria.name}}</a>
+            <a href="{% url 'materialy' %}?kategoria={{kategoria.id}}" class="btn m-1 pomoc btn-outline-warning text-center  mx-auto d-block">{{kategoria.name}}</a>
           </div>
         {% endfor %}
       </div>

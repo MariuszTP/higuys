@@ -39,15 +39,14 @@ href="{% static 'web/css/bootstrap.min.css' %}"/>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="container">
           <div class="row  justify-content-evenly">
+            <a class="col-md-2 col-xl-1 text-center menu " id = "nav" href="{% url 'main' %}">Hi guys!</a>
+            <a class="col-md-2 col-xl-1 text-center menu " id = "nav" href="{% url 'materialy' %}">Materiały</a>
+            <a class="col-md-2 col-xl-1 text-center menu" id = "nav" href="{% url 'materialy2' %}">Materiały2</a>
+            <div class="col-md-2 col-xl-1 menu  text-center" id = "nav">Materiały</div>
+            <a class="btn m-3 pomoc btn-outline-warning col-md-2 col-xl-1 text-center" >Materiały</a>
 
-            <a class="btn  pomoc btn-outline-warning col-md-2 col-xl-1 text-center" href="{% url 'main' %}">Hi guys!</a>
-            <a class="btn  pomoc btn-outline-warning col-md-2 col-xl-1 text-center" href="{% url 'materialy' %}">Materiały</a>
-            <a class="btn  pomoc btn-outline-warning col-md-2 col-xl-1 text-center" href="{% url 'materialy2' %}" >Materiały2</a>
-            <a class="btn  pomoc btn-outline-warning col-md-2 col-xl-1 text-center" >Stdandard1</a>
 
-
-
-                     
+            
           </div>
        
 

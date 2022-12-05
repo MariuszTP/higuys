@@ -1,18 +1,20 @@
 .navbar {
-  outline: 1px solid yellow;
+  outline: 1px solid rgba(254,193,7,255);
   outline-offset: -5px;
   background-color: red;
   padding: 20px 0px;
   margin-bottom: 5px;
 }
 
+#p1 {background-color:rgba(255,193,7,255);} /* red with opacity*/
+
 .navbar-toggler {
-  border-color: yellow;
-  outline: 1px solid yellow;
+  border-color: rgba(254,193,7,255);
+  outline: 1px solid rgba(254,193,7,255);
 }
 
 .navbar-toggler:hover {
-  outline: 3px solid yellow;
+  outline: 3px solid rgba(254,193,7,255);
 }
 
 .phone_number, .email_navbar{
@@ -20,8 +22,8 @@
 }
 
 #nav {
-  outline:1px solid yellow;
-  color: yellow;
+  outline:1px solid rgba(254,193,7,255);
+  color: rgba(254,193,7,255);
   border-radius: 5px;
   padding-right: -20px;
   font-style: italic;
@@ -30,7 +32,7 @@
 }  
   /*   hovering menu */
 #nav:hover {
-  background-color: yellow;
+  background-color: rgba(254,193,7,255);
   color: red;
   /* font-weight: 900; */
 }
@@ -39,40 +41,11 @@
   position: relative;
   margin-top: 5px;
   margin-bottom: 5px;
-  outline: 1px solid yellow;
-  color: yellow;
+  outline: 1px solid rgba(254,193,7,255);
+  color: rgba(254,193,7,255);
   border-radius: 5px;
   font-style: italic;
   text-decoration: none;
-}
-
-.pomoc{
-  text-decoration: none;
-  color: yellow;
-  
-}
-
-.menu1 {
-  position: relative;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  outline: 1px solid yellow;
- 
-  border-radius: 5px;
-  font-style: italic;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.menu1:hover {
-  background-color: yellow;
-  color: red;
-
-}
-.pomoc:hover {
-
-  color: red;
-
 }
 
 
@@ -80,20 +53,20 @@
   height: 180px;
   background-color: red;
   font-size: 40px;
-  text-shadow: 10px 10px 8px yellow;
+  text-shadow: 5px 5px 5px yellow;
 }
 .headersm {
   height: 180px;
   background-color: red;
   font-size: 10vw;
-  text-shadow: 5px 5px 5px yellow;
+  text-shadow: 5px 5px 5px rgba(254,193,7,255);
 }
 #ramka {
-  outline: 1px solid yellow;
+  outline: 1px solid rgba(254,193,7,255);
   outline-offset: -10px;
   padding-top: 45px;
   text-align: center;
-  color: yellow;
+  color: rgba(254,193,7,255);
 }
 
 .guys {
@@ -174,6 +147,13 @@
   color: yellow;
   padding-bottom: 15px;
 
+}
+
+.pomoc {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-align: center;
+  padding-right: 5px;
 }
 
 

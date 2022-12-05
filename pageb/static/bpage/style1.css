@@ -27,6 +27,7 @@
   font-style: italic;
   padding-right: -60px;
   display: inline;
+  
 }  
   /*   hovering menu */
 #nav:hover {
@@ -35,6 +36,9 @@
   /* font-weight: 900; */
 }
 
+.pomoc {
+  text-decoration: none;
+}
 .menu {
   position: relative;
   margin-top: 5px;

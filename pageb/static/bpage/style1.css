@@ -27,7 +27,6 @@
   font-style: italic;
   padding-right: -60px;
   display: inline;
-  
 }  
   /*   hovering menu */
 #nav:hover {
@@ -36,9 +35,6 @@
   /* font-weight: 900; */
 }
 
-.pomoc {
-  text-decoration: none;
-}
 .menu {
   position: relative;
   margin-top: 5px;
@@ -49,6 +45,36 @@
   font-style: italic;
   text-decoration: none;
 }
+
+.pomoc{
+  text-decoration: none;
+  color: yellow;
+  
+}
+
+.menu1 {
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  outline: 1px solid yellow;
+ 
+  border-radius: 5px;
+  font-style: italic;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.menu1:hover {
+  background-color: yellow;
+  color: red;
+
+}
+.pomoc:hover {
+
+  color: red;
+
+}
+
 
 .header {
   height: 180px;

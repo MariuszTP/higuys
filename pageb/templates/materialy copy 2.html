@@ -32,14 +32,13 @@
       <div class=" col ">
         <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal{{product.pk}}">
           <p class="text-center mt-5 ">{{ product.name }} </p>
-                <!--<img src="{{ product.image.url }}" class="figure-img mx-auto d-block rounded  mb-2" height="200px"> -->
+                <!--           <img src="{{ product.image.url }}" class="figure-img mx-auto d-block rounded  mb-2" height="200px"> -->
           <img src="{{ product.image.url }}" class="figure-img mx-auto d-block rounded  mb-2" width="100%;">
         </a>
       </div>
 
     <!---modal-->
- 
-
+    
       <div class="modal fade" id="exampleModal{{product.pk}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
           <div class="modal-content">
@@ -51,7 +50,7 @@
 
               <!---image-->
               <img src="{{ product.image.url }}" class="figure-img img-fluid rounded" width="100%" alt="...">
-
+              {{ product.description }}
             
             </div> 
             <div class="modal-footer">

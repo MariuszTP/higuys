@@ -5,25 +5,6 @@
 {% block content %}
 
 <!-- menu -->
-<div class="container materialy"  id=" materialy" style="background-color: red">
-  <div class="row justify-content-center">
-
-    <div class="col-sm-5 col-md-4 text-center pe-3 ps-4" " >
-      <a href="{% url 'materialy' %}"  class=" btn m-1 pomoc btn-outline-warning me-2 mx-auto d-block mt-3">Wyświetl wszystko :)</a>
-    </div>
-    
-    <div class="col-12 pe-4 ps-4"  >
-      <div class="row row-cols-2  row-cols-lg-4 row-cols-xxl-5 align-items-center">
-        {% for kategoria in kategoria %}
-          <div class = "col">
-            <a href="{% url 'materialy' %}?kategoria={{kategoria.id}}" class="btn m-1 pomoc btn-outline-warning text-center  mx-auto d-block">{{kategoria.name}}</a>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-</div>
-
 
 <div class="container  d-grid gap-3"  style="background-color: rgba(52,59,67,255)">
     
@@ -63,6 +44,18 @@
     {% endfor %}
   </div>
 </div>
+
+
+<div class="container" style="background-color: red" >
+
+  <button type="button" class="btn btn-outline-warning">B outline</button>
+
+  <a class="btn m-3 pomoc btn-outline-warning col-md-2 col-xl-1 text-center" >Stdandard1</a>
+
+</div>
+
+
+
 
 
 

@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from pageb.views import base, main1,  main2, main, gallery1, gallery2, gallery3, gallery4, gallery5, materialy, materialy2
+from pageb.views import base, main1,  main2, main, gallery1, gallery2, gallery3, gallery4, gallery5, materialy, materialy2, materialy3
 
 from django.conf.urls.static import static
 from django.conf import settings
@@ -29,6 +29,7 @@ urlpatterns = [
     path('g1', gallery1, name='gallery11'),
     path('m', materialy, name='materialy'),
     path('m2', materialy2, name='materialy2'),
+    path('m3', materialy2, name='materialy3'),
     path('g2', gallery2, name='gallery2'),
     path('g3', gallery3, name='gallery3'),
     path('g4', gallery4, name='gallery4'),

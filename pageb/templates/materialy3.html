@@ -42,9 +42,16 @@
 
 <div class="container" style="background-color: red" >
 
-  <button type="button" class="btn btn-outline-warning">B outline</button>
+    <button type="button" class="btn btn-outline-warning">B outline</button>
 
-  <a class="btn m-3 pomoc btn-outline-warning col-md-2 col-xl-1 text-center" >Stdandard1</a>
+    <a class="btn m-3 pomoc btn-outline-warning col-md-2 col-xl-1 text-center" >Stdandard1</a>
+
+    <a class="btn m-3 pomoc btn-outline-warning col-md-2 col-xl-1 text-center" href="{% url 'main' %} >Stdandard1</a>
+
+    <a href="{% url 'main'  %}">
+        <button class="btn btn-primary">{% bootstrap_icon "home" %}</button>
+    </a>
+
 
 </div>
 
@@ -55,5 +62,5 @@
 
 {% endblock %}
 
-    
-    
+
+

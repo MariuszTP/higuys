@@ -34,12 +34,12 @@ def main(request):
         From: {}
         '''.format(data['message'], data['from_email'])
         send_mail(data['subject'], message, '', ['turekpython@gmail.com'])
-       
+
 
     return render(request, 'index1.html')
 
 
-    
+
 
 def gallery1(request):
     products = Gallery1.objects.all()

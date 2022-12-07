@@ -8,7 +8,7 @@
 
 <link rel='stylesheet' href="{% static 'bpage/style1.css' %}">
 
-<link 
+<link
 rel = "stylsheet"
 type="text/css"
 href="{% static 'web/css/bootstrap.min.css' %}"/>
@@ -31,24 +31,34 @@ href="{% static 'web/css/bootstrap.min.css' %}"/>
   <nav class="navbar navbar-expand-md navbar-dark "  >
     <div class="container-fluid">
       <a class="navbar-brand " style="pointer-events: none;"></a>
-     
+
       <button class= "navbar-toggler navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon "></span>
       </button>
-  
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="container">
-          <div class="row justify-content-evenly mt-1">
+          <div class="row   row-cols-lg-3 row-cols-xxl-4 justify-content-evenly mt-1">
 
-            <a class="btn pomoc btn-outline-warning col-md-2 col-xl-1 text-center m-1" href="{% url 'main' %}">Hi guys!</a>
-            <a class="btn pomoc btn-outline-warning col-md-2 col-xl-1 text-center m-1" href="{% url 'materialy' %}">Materiały</a>
-            <a class="btn pomoc btn-outline-warning col-md-2 col-xl-1 text-center m-1" href="{% url 'materialy2' %}" >Materiały2</a>
-            <a class="btn pomoc btn-outline-warning col-md-2 col-xl-1 text-center m-1" href="{% url 'materialy3' %}">Stdandard1</a>
-            
 
+
+
+            <a href="{% url 'materialy' %}" class="bord">
+                <li class="col-md-2 col-xl-1 text-center " id = "nav" >Hi guys!</li>
+            </a>
+
+            <a href="{% url 'materialy' %}" class="bord">
+                <li class="col-md-2 col-xl-1 text-center " id = "nav" >Materialy</li>
+            </a>
+
+            <a href="{% url 'materialy2' %}" class="bord">
+                <li class="col-md-2 col-xl-1 text-center " id = "nav" >Materialy2</li>
+            </a>
+
+            <a class="btn btn-outline-warning col-md-2 col-xl-1 text-center m-1" href="{% url 'materialy2' %}" >Materiały2</a>
 
           </div>
-       
+
         </div>
       </div>
     </div>
@@ -57,12 +67,12 @@ href="{% static 'web/css/bootstrap.min.css' %}"/>
 
 
 <!-- <div class="container position-absolute">
-  <p class = "menu1" id =" try"> Materials</p>        
-  <p class = "menu2"> About</p>              
-  <p class = "menu3"> Program</p>         
-  <p class = "menu4"> News</p> 
+  <p class = "menu1" id =" try"> Materials</p>
+  <p class = "menu2"> About</p>
+  <p class = "menu3"> Program</p>
+  <p class = "menu4"> News</p>
 </div> -->
-    
+
 
   {% block content %}
 
@@ -73,19 +83,19 @@ href="{% static 'web/css/bootstrap.min.css' %}"/>
       <div class="col-12 col-lg-6 justify-content-center mt-3">
 
         <form action="" method="POST"> {% csrf_token %}
-          
+
           <div class="fs-6 text-white">Subject</div>
           <input type ="text" name="subject" >
-          
+
           <div class="fs-6 text-white">Message</div>
           <textarea name="message" cols="30" rows="3"></textarea>
-            
-          <div class="fs-6 text-white">Email</div>                                            
+
+          <div class="fs-6 text-white">Email</div>
           <input type="text" name="from_email">
 
-          <div class="submit-button-wrapper"> 
-          <input type="submit" value="Send Message" />    
-          </div> 
+          <div class="submit-button-wrapper">
+          <input type="submit" value="Send Message" />
+          </div>
 
         </form>
       </div>
@@ -99,13 +109,13 @@ href="{% static 'web/css/bootstrap.min.css' %}"/>
     </div>
   </div>
 
- 
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    
+
 </body>
 </html>

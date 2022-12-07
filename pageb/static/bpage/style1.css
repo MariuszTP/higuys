@@ -17,6 +17,11 @@
   outline: 3px solid rgba(254,193,7,255);
 }
 
+.btn-outline-warning:hover {
+    background-color: rgba(254,193,7,255);
+}
+
+
 .phone_number, .email_navbar{
   color: yellow;
 }
@@ -29,7 +34,7 @@
   font-style: italic;
   padding-right: -60px;
   display: inline;
-}  
+}
   /*   hovering menu */
 #nav:hover {
   background-color: rgba(254,193,7,255);
@@ -124,13 +129,13 @@
 
 
 .btmp img:last-child {
-  display: none;  
+  display: none;
 }
 .btmp:hover img:last-child {
-  display: block;  
+  display: block;
 }
 .btmp:hover img:first-child {
-  display: none;  
+  display: none;
 }
 
 /* materiały */
@@ -139,7 +144,7 @@
 
   background-color: red;
   height: auto;
- 
+
   outline: 1px solid yellow;
   outline-offset: -10px;
 /*   padding-top: 45px; */

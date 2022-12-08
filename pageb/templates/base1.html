@@ -38,17 +38,26 @@ href="{% static 'web/css/bootstrap.min.css' %}"/>
   
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="container">
-          <div class="row justify-content-evenly mt-1">
+            <div class="row justify-content-evenly">
 
-            <a class="btn pomoc btn-outline-warning col-md-2 col-xl-1 text-center m-1" href="{% url 'main' %}">Hi guys!</a>
-            <a class="btn pomoc btn-outline-warning col-md-2 col-xl-1 text-center m-1" href="{% url 'materialy' %}">Materiały</a>
-            <a class="btn pomoc btn-outline-warning col-md-2 col-xl-1 text-center m-1" href="{% url 'materialy2' %}" >Materiały2</a>
-            <a class="btn pomoc btn-outline-warning col-md-2 col-xl-1 text-center m-1" href="{% url 'materialy3' %}">Stdandard1</a>
-            
+                <div class = "col-12 col-sm-2 col-xl-1 bord mt-1">
+                    <a href="{% url 'main' %}" class=" text-center mx-auto d-block mainnavbar-buttons">Hi guys!</a>
+                </div>
 
+                <div class = "col-12 col-sm-2 col-xl-1 bord mt-1 ">
+                    <a href="{% url 'materialy' %}"class=" text-center mx-auto d-block mainnavbar-buttons" >Materialy</a>
+                </div>
 
-          </div>
-       
+                <div class = "col-12 col-sm-2 col-xl-1 bord mt-1 ">
+                    <a href="{% url 'materialy2' %}" class=" text-center mx-auto d-block mainnavbar-buttons">O szkole</a>
+                </div>
+
+                <div class = "col-12 col-sm-2 col-xl-1 bord mt-1 ">
+                    <a href="{% url 'materialy3' %}" class=" text-center mx-auto d-block mainnavbar-buttons">Materialy1</a>
+                </div>
+
+            </div>
+
         </div>
       </div>
     </div>

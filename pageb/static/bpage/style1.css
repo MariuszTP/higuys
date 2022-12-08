@@ -18,24 +18,67 @@
 }
 
 .phone_number, .email_navbar{
-  color: yellow;
+  color: rgba(254,193,7,255);
 }
 
-/* #nav {
-  outline:1px solid rgba(254,193,7,255);
-  color: rgba(254,193,7,255);
+.bord {
+  border: 1px solid rgba(254,193,7,255);
+  padding: 2px;
+  padding-bottom: 4px;
   border-radius: 5px;
-  padding-right: -20px;
+  margin-right: -5px;
+
+}
+
+.bord1 {
+  box-sizing: content-box;
+  width: 120px;
+  height: 20px;
+  padding: 2px;
+  padding-bottom: 8px;
+  margin: 5px;
+  border: 1px solid rgba(254,193,7,255);
+  border-radius: 5px;
+
+}
+
+.mainnavbar-buttons {
   font-style: italic;
-  padding-right: -60px;
+  text-decoration: none;
+  color: rgba(254,193,7,255);
+}
+
+.bord:hover, .bord1:hover, mainnavbar-buttons:hover  {
+  background-color: rgba(254,193,7,255);
+  -webkit-text-fill-color: red;
+
+}
+
+
+.materials-buttons {
+  font-style: italic;
+  text-decoration: none;
+  color: rgba(254,193,7,255);
+
+}
+
+
+#nav {
+
+  color: rgba(254,193,7,255);
+  font-style: italic;
   display: inline;
-}  
+}
+
   /*   hovering menu */
+
 #nav:hover {
   background-color: rgba(254,193,7,255);
   color: red;
   /* font-weight: 900; */
 } */
+
+
 
 .menu {
   position: relative;
@@ -43,7 +86,7 @@
   margin-bottom: 5px;
   outline: 1px solid rgba(254,193,7,255);
   color: rgba(254,193,7,255);
-  border-radius: 5px;
+
   font-style: italic;
   text-decoration: none;
 }
@@ -113,24 +156,24 @@
 
 #nauka {
   /* padding-top: 100px; */
- background-color: grey;
- opacity: 0.8;
- width: 100%;
+  background-color: grey;
+  opacity: 0.8;
+  width: 100%;
 }
 
 #nauka:hover {
- background-color: BLACK;
+  background-color: BLACK;
 }
 
 
 .btmp img:last-child {
-  display: none;  
+  display: none;
 }
 .btmp:hover img:last-child {
-  display: block;  
+  display: block;
 }
 .btmp:hover img:first-child {
-  display: none;  
+  display: none;
 }
 
 /* materiały */
@@ -139,7 +182,7 @@
 
   background-color: red;
   height: auto;
- 
+
   outline: 1px solid yellow;
   outline-offset: -10px;
 /*   padding-top: 45px; */
@@ -155,6 +198,3 @@
   text-align: center;
   padding-right: 5px;
 }
-
-
-

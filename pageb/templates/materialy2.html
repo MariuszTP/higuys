@@ -7,7 +7,7 @@
 <!-- menu -->
 
 <div class="container  d-grid gap-3"  style="background-color: rgba(52,59,67,255)">
-    
+
   <div class="row row-cols-2  row-cols-lg-3 row-cols-xxl-4 ">
     {% for product in products%}
       <div class=" col ">
@@ -35,6 +35,26 @@
   </div>
 
 
+<div class="container" style="background-color: red" >
+
+    <button type="button" class="btn btn-outline-warning">B outline</button>
+
+    <a  class="btn m-3 btn-outline-warning col-md-2 col-xl-1 text-center"  >Stdandard1</a>
+
+    <a  class="btn m-3  btn-outline-warning col-md-2 col-xl-1 text-center " href="{% url 'materialy2' %}">Stdandard2</a>
+
+</div>
+
+
+<div class="container" style="background-color: red" >
+    <a class="btn m-3 btn-outline-warning col-md-2 col-xl-1 text-center pomoc" href="{% url 'materialy2' %}">Stdandard3</a>
+</div>
+
+<div class="container" style="background-color: red" >
+
+  <a href="{% url 'materialy2'  %}"><button class="btn btn-outline-warning">heloo</button></a>
+
+</div>
 
 
 
@@ -42,5 +62,5 @@
 
 {% endblock %}
 
-    
-    
+
+

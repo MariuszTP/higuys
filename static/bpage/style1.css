@@ -1,0 +1,185 @@
+.navbar {
+  outline: 1px solid rgba(254,193,7,255);
+  outline-offset: -5px;
+  background-color: red;
+  padding: 20px 0px;
+  margin-bottom: 5px;
+}
+
+#p1 {background-color:rgba(255,193,7,255);} /* red with opacity*/
+
+.navbar-toggler {
+  border-color: rgba(254,193,7,255);
+  outline: 1px solid rgba(254,193,7,255);
+}
+
+.navbar-toggler:hover {
+  outline: 3px solid rgba(254,193,7,255);
+}
+
+.phone_number, .email_navbar{
+  color: yellow;
+}
+
+.bord {
+    border: 1px solid yellow;
+    border-radius: 5px
+
+
+}
+
+.bord:hover  {
+    background-color: yellow;
+    -webkit-text-fill-color: red;
+}
+
+
+#nav {
+
+    color: rgba(254,193,7,255);
+
+    padding-right: -20px;
+    font-style: italic;
+    padding-right: -60px;
+    display: inline;
+}
+
+  /*   hovering menu */
+
+#nav:hover {
+  background-color: rgba(254,193,7,255);
+  color: red;
+  /* font-weight: 900; */
+} */
+
+
+
+.menu {
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  outline: 1px solid rgba(254,193,7,255);
+  color: rgba(254,193,7,255);
+
+  font-style: italic;
+  text-decoration: none;
+}
+
+
+.header {
+  height: 180px;
+  background-color: red;
+  font-size: 40px;
+  text-shadow: 5px 5px 5px yellow;
+}
+.headersm {
+  height: 180px;
+  background-color: red;
+  font-size: 10vw;
+  text-shadow: 5px 5px 5px rgba(254,193,7,255);
+}
+#ramka {
+  outline: 1px solid rgba(254,193,7,255);
+  outline-offset: -10px;
+  padding-top: 45px;
+  text-align: center;
+  color: rgba(254,193,7,255);
+}
+
+.guys {
+  position: relative;
+  animation-name: motion;
+  animation-duration: 4s;
+}
+.guyssm {
+  position: relative;
+  animation-name: motion1;
+  animation-duration: 3s;
+}
+@keyframes motion {
+  0%   {background-color:transparent; left:-1200px; top:0px;}
+  100%  { left:00px; top:0px;}
+}
+@keyframes motion1 {
+  0%   {background-color:transparent; left:-500px; top:0px;}
+  100%  { left:00px; top:0px;}
+}
+
+.new_york {
+  color: yellow;
+}
+/*   For zapraszamy na zajecia */
+.content_text {
+  color: rgba(255,250,80,255);
+}
+
+/* for pictures positioning*/
+.tooltip1 {
+	display: inline-block;
+	position: relative;
+	margin: 50px;
+}
+
+.tooltip2  {
+	visibility: hidden;
+}
+
+.tooltip1:hover  .tooltip2 {
+  visibility: visible;
+}
+
+#nauka {
+  /* padding-top: 100px; */
+ background-color: grey;
+ opacity: 0.8;
+ width: 100%;
+}
+
+#nauka:hover {
+ background-color: BLACK;
+}
+
+
+.btmp img:last-child {
+  display: none;
+}
+.btmp:hover img:last-child {
+  display: block;
+}
+.btmp:hover img:first-child {
+  display: none;
+}
+
+/* materiały */
+
+.materialy {
+
+  background-color: red;
+  height: auto;
+
+  outline: 1px solid yellow;
+  outline-offset: -10px;
+/*   padding-top: 45px; */
+  text-align: center;
+  color: yellow;
+  padding-bottom: 15px;
+
+}
+
+.pomoc {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-align: center;
+  padding-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+

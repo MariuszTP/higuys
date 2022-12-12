@@ -18,8 +18,9 @@
 }
 
 .btn-outline-warning:hover {
-  background-color: rgba(254,193,7,255);
+    background-color: rgba(254,193,7,255);
 }
+
 
 .phone_number, .email_navbar{
   color: rgba(254,193,7,255);
@@ -27,22 +28,20 @@
 
 .bord {
   border: 1px solid rgba(254,193,7,255);
-  padding: 3px;
-  padding-bottom: 3px;
-  border-radius: 3px;
+  padding: 2px;
+  padding-bottom: 4px;
+  border-radius: 5px;
   margin-right: -5px;
+
 }
 
 .bord1 {
   box-sizing: content-box;
   width: 120px;
   height: 20px;
-  padding: 3px;
-  padding-bottom: 7px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-top:2px;
-  margin-bottom: 2px;
+  padding: 2px;
+  padding-bottom: 8px;
+  margin: 5px;
   border: 1px solid rgba(254,193,7,255);
   border-radius: 5px;
 
@@ -54,27 +53,31 @@
   color: rgba(254,193,7,255);
 }
 
-.all-categories-button {
-  margin-bottom: 2px;
-}
-
 .bord:hover, .bord1:hover, mainnavbar-buttons:hover  {
   background-color: rgba(254,193,7,255);
   -webkit-text-fill-color: red;
+
 }
+
 
 .materials-buttons {
   font-style: italic;
   text-decoration: none;
   color: rgba(254,193,7,255);
+
 }
 
+
 #nav {
+
   color: rgba(254,193,7,255);
   font-style: italic;
   display: inline;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1445a9e833d25a1456b6609edfbb648ff9a1dafe
   /*   hovering menu */
 
 #nav:hover {
@@ -82,6 +85,8 @@
   color: red;
   /* font-weight: 900; */
 } */
+
+
 
 .menu {
   position: relative;
@@ -94,17 +99,18 @@
   text-decoration: none;
 }
 
+
 .header {
   height: 180px;
   background-color: red;
   font-size: 40px;
-  text-shadow: 5px 5px 5px black;
+  text-shadow: 5px 5px 5px yellow;
 }
 .headersm {
   height: 180px;
   background-color: red;
   font-size: 10vw;
-  text-shadow: 5px 5px 5px black);
+  text-shadow: 5px 5px 5px rgba(254,193,7,255);
 }
 #ramka {
   outline: 1px solid rgba(254,193,7,255);
@@ -200,9 +206,3 @@
   text-align: center;
   padding-right: 5px;
 }
-
-.about-container {
- 
-  padding-top: -50px;
-}
-

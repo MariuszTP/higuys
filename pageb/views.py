@@ -75,15 +75,8 @@ def materialy(request):
     context = {'products': products, 'kategoria': kategoria}
     return render(request, 'materialy.html', context)
 
-def materialy2(request):
-    kategoria = Kategoria.objects.all()
-    kategory_id = request.GET.get('kategoria')
-    if kategory_id:
-        products = Gallery1.objects.filter(kategoria=kategory_id)
-    else:
-        products = Gallery1.objects.all()
-    context = {'products': products, 'kategoria': kategoria}
-    return render(request, 'materialy2.html', context)
+def about(request):
+    return render(request, 'about.html')
 
 def materialy3(request):
     kategoria = Kategoria.objects.all()

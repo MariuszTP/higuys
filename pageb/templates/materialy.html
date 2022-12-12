@@ -8,12 +8,12 @@
 <div class="container materialy" id=" materialy" style="background-color: red">
   <div class="row justify-content-center">
 
-    <div class="col-6 col-md-4 text-center mt-3 bord" >
+    <div class="col-6 col-md-4 text-center mt-3 bord all-categories-button" >
       <a href="{% url 'materialy' %}"  class="mainnavbar-buttons">Wyświetl wszystko :)</a>
     </div>
 
     <div class="col-12"  >
-      <div class="row row-cols-2  row-cols-md-4 row-cols-xxl-5  justify-content-evenly">
+      <div class="row row-cols-2 row-cols-md-4 row-cols-xxl-5 justify-content-evenly">
         {% for kategoria in kategoria %}
         <div class = "col bord1">
           <a href="{% url 'materialy' %}?kategoria={{kategoria.id}}" class="text-center mx-auto d-block materials-buttons">{{kategoria.name}}</a>
@@ -25,7 +25,7 @@
 </div>
 
 
-<div class="container  d-grid gap-3"  style="background-color: rgba(52,59,67,255)">
+<div class="container  d-grid gap-3" style="background-color: rgba(52,59,67,255)">
     
   <div class="row row-cols-2  row-cols-lg-3 row-cols-xxl-4 ">
     {% for product in products%}

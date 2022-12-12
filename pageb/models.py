@@ -23,3 +23,7 @@ class Gallery1(models.Model):
 class Image3(models.Model):
     image = models.ImageField(null=True)
     default = models.BooleanField(default=False)
+
+
+from django_google_maps import fields as map_fields
+

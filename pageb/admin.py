@@ -18,3 +18,5 @@ from .models import Image3
 admin.site.register(Image3)
 
 
+
+

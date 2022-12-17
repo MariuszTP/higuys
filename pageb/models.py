@@ -11,6 +11,13 @@ class Kategoria(models.Model):
     def __str__(self):
         return self.name
 
+class Opinion(models.Model):
+    name = models.CharField(null=True, max_length=5)
+
+    def __str__(self):
+        return self.name
+
+
 class Gallery1(models.Model):
     kategoria = models.ForeignKey(Kategoria, on_delete=models.CASCADE, null=True)
     name = models.CharField(null=True, max_length=50)

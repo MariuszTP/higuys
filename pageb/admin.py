@@ -8,10 +8,11 @@ from .models import *
 from .models import Kategoria
 admin.site.register(Kategoria)
 
+from .models import Opinion
+admin.site.register(Opinion)
+
 from .models import Gallery1
 admin.site.register(Gallery1)
-
-
 
 
 from .models import Image3

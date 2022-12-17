@@ -58,7 +58,15 @@
   margin-bottom: 2px;
 }
 
-.bord:hover, .bord1:hover, mainnavbar-buttons:hover  {
+.bord1:hover  {
+  background-color: rgba(254,193,7,255);
+}
+
+.materials-buttons:hover  {
+  -webkit-text-fill-color: red;
+}
+
+.bord:hover, .mainnavbar-buttons:hover  {
   background-color: rgba(254,193,7,255);
   -webkit-text-fill-color: red;
 }
@@ -104,7 +112,7 @@
   height: 180px;
   background-color: red;
   font-size: 10vw;
-  text-shadow: 5px 5px 5px black);
+  text-shadow: 5px 5px 5px black;
 }
 #ramka {
   outline: 1px solid rgba(254,193,7,255);

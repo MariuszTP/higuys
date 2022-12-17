@@ -6,8 +6,6 @@ from django.http import HttpResponse
 
 from django.core.mail import send_mail, BadHeaderError
 
-from django.contrib import messages
-
 # Create your views here.
 
 
@@ -40,22 +38,32 @@ def main(request):
 
     return render(request, 'index1.html')
 
+def opinion(request):
 
+    if request.method =="POST":
 
+        message = request.POST.get("opinion")
+        wiadomosc = Opinion(name=message)
+        wiadomosc.save()
 
+    return render(request, 'index1.html')
 
 def opinion(request):
+
     if request.method =="POST":
-        message = request.POST.get("opinion")
-        print(message)    
-        if len(message) > 20:
+
+        message = request.POST["opinion"]
+        print(message)
+       
+        if len(wiadomosc.name) > 2000:
             messages.warning(request,'Teks zbyt długi, max limit 2000 znaków')
             return render(request, 'about.html')
-        else:
-            wiadomosc = Opinion(name=message)
-            wiadomosc.save()
-            messages.success(request,'wiadomosc wysłana')
+        
+
     return render(request, 'index1.html')
+
+
+
 
 
 def gallery1(request):
@@ -97,7 +105,7 @@ def about(request):
 
 def opinie(request):
     queryset = Opinion.objects.all()
-    context = {'queryset': queryset}
+    context = {'queryset': querysety}
 
     return render(request, 'opinion.html', context)
 

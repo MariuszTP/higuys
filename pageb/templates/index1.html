@@ -22,7 +22,7 @@
 
 <div class="container">
   <div class="position-relative btmp">
-    <img src="{% static 'bpage/images/USA.jpg' %}" class="img-fluid" alt="...">
+    <img src="{% static 'bpage/images/USA.jpg' %}" class="w-100" alt="...">
     <img src="{% static 'bpage/images/english_logo1.jpg' %}" class="img-fluid" alt="...">
   </div>
 </div>
@@ -109,8 +109,28 @@
 </div>
 
 
+<div class="container justify-content-center" style="background-color: rgba(52,59,67,255)"> 
+  <div class=" d-flex content_text  justify-content-center">
+    <h1 class="fs-1 pt-5 pb-5 text text-center">Napisz na stronie swoją opinie</h1>
+  </div>
+  <div class=" d-flex content_text  justify-content-center">
+    <form action="{% url 'opinion' %}" method="POST"> {% csrf_token %}
+      {% if messages %}
+            {% for msg in messages %}
+            <p>{{msg}}</p>
+            {% endfor %}
+        {% endif %}
 
-
+      <div class="fs-6 text-white">Napisz opinie</div>
+      <textarea name="opinion" style="width: 70vw" rows="5" placeholder="max 2000 znaków"></textarea>
+      
+      <div class="submit-button-wrapper"> 
+        <input type="submit" value="Send Message" />    
+      </div> 
+         
+    </form>
+  </div>
+</div>
 
 
 {% endblock %}

@@ -12,7 +12,8 @@ class Kategoria(models.Model):
         return self.name
 
 class Opinion(models.Model):
-    name = models.CharField(null=True, max_length=5)
+    name = models.CharField(null=True, max_length=2000)
+    approval = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name

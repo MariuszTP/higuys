@@ -96,7 +96,7 @@ def about(request):
     return render(request, 'about.html')
 
 def opinie(request):
-    queryset = Opinion.objects.all()
+    queryset = Opinion.objects.filter(approval=True)
     context = {'queryset': queryset}
 
     return render(request, 'opinion.html', context)

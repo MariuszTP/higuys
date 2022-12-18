@@ -41,10 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrap5',
-
-    'pageb',
-    'django_google_maps'
-
+    'pageb'
 ]
 
 

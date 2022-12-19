@@ -21,11 +21,11 @@
   background-color: rgba(254,193,7,255);
 }
 
-.higuys_mainnavbar {
+/* .higuys_mainnavbar {
   font-style: italic;
   text-decoration: none;
   font-size: 30px;
-}
+} */
 
 .bord {
   border: 1px solid rgba(254,193,7,255);
@@ -205,12 +205,6 @@
 
 }
 
-.pomoc {
-  padding-top: 1px;
-  padding-bottom: 1px;
-  text-align: center;
-  padding-right: 5px;
-}
 
 .about-container {
  

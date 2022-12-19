@@ -8,17 +8,14 @@
 <div class="container d-none d-sm-block">
   <div class="header " id="ramka">
     <p class = "guys">Hi guys!</p>
-
   </div>
 </div>
 
 <div class="container d-block d-sm-none">
   <div class="headersm " id="ramka">
     <p class = "guyssm">Hi guys!</p>
-
   </div>
 </div>
-
 
 <div class="container">
   <div class="position-relative btmp">
@@ -26,9 +23,6 @@
     <img src="{% static 'bpage/images/english_logo1.jpg' %}" class="img-fluid" alt="...">
   </div>
 </div>
-
-
-
 
 <div class="container content_text d-none d-sm-block" style="background-color: rgba(52,59,67,255)">
   <h1 class="fs-1 pt-5 pb-5 text text-center">Zapraszamy na zajęcia</h1>
@@ -68,12 +62,9 @@
   </div>
 </div>
 
-
 <div class="container content_text d-block d-sm-none" style="background-color: rgba(52,59,67,255)">
   <h1 class="fs-1 pt-5 pb-5 text text-center">Zapraszamy na zajęcia</h1>
-
   <div class="row row-cols-1 row-cols-md-2 ps-3 pe-3 ">
-     
     <div class="col pt-3 pb-3 text-center" >
       <div class="position-relative">
         <div ><img src="{% static 'bpage/images/KIDS1.jpg' %}" class="img-fluid" alt="...">
@@ -108,7 +99,6 @@
   </div>
 </div>
 
-
 <div class="container justify-content-center" style="background-color: rgba(52,59,67,255)"> 
   <div class=" d-flex content_text  justify-content-center">
     <h1 class="fs-1 pt-5 pb-5 text text-center">Napisz swoją opinie</h1>
@@ -120,18 +110,14 @@
           <p>{{msg}}</p>
         {% endfor %}
       {% endif %}
-
       <div class="fs-6 text-white">Napisz opinie</div>
       <textarea name="opinion" style="width: 60vw" rows="5" placeholder="max 2000 znaków"></textarea>
-      
       <div class="submit-button-wrapper"> 
         <input type="submit" value="Send Message" />    
       </div> 
-         
     </form>
   </div>
 </div>
-
 
 {% endblock %}
 

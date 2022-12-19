@@ -25,37 +25,33 @@ href="{% static 'web/css/bootstrap.min.css' %}"/>
 
 
 <body>
-
   <nav class="navbar navbar-expand-md navbar-dark "  >
     <div class="container-fluid">
-      <a class="navbar-brand ms-5 higuys_mainnavbar "  style="pointer-events: none; color:yellow">Hi guys!</a>
-     
+
       <button class= "navbar-toggler navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon "></span>
       </button>
   
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="container">
-            <div class="row justify-content-evenly">
+          <div class="row justify-content-evenly">
 
-                <div class = "col-12 col-sm-2 col-xl-1 bord mt-1">
-                    <a href="{% url 'main' %}" class=" text-center mx-auto d-block mainnavbar-buttons">Hi guys!</a>
-                </div>
-
-                <div class = "col-12 col-sm-2 col-xl-1 bord mt-1 ">
-                    <a href="{% url 'materialy' %}"class=" text-center mx-auto d-block mainnavbar-buttons" >Materialy</a>
-                </div>
-
-                <div class = "col-12 col-sm-2 col-xl-1 bord mt-1 ">
-                    <a href="{% url 'about' %}" class=" text-center mx-auto d-block mainnavbar-buttons">O szkole</a>
-                </div>
-
-                <div class = "col-12 col-sm-2 col-xl-1 bord mt-1 ">
-                    <a href="{% url 'opinie' %}" class=" text-center mx-auto d-block mainnavbar-buttons">Opinie</a>
-                </div>
-
+            <div class = "col-12 col-sm-2 col-xl-1 bord mt-1">
+                <a href="{% url 'main' %}" class=" text-center mx-auto d-block mainnavbar-buttons">Hi guys!</a>
             </div>
 
+            <div class = "col-12 col-sm-2 col-xl-1 bord mt-1 ">
+                <a href="{% url 'materialy' %}"class=" text-center mx-auto d-block mainnavbar-buttons" >Materialy</a>
+            </div>
+
+            <div class = "col-12 col-sm-2 col-xl-1 bord mt-1 ">
+                <a href="{% url 'about' %}" class=" text-center mx-auto d-block mainnavbar-buttons">O szkole</a>
+            </div>
+
+            <div class = "col-12 col-sm-2 col-xl-1 bord mt-1 ">
+                <a href="{% url 'opinie' %}" class=" text-center mx-auto d-block mainnavbar-buttons">Opinie</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -88,7 +84,6 @@ href="{% static 'web/css/bootstrap.min.css' %}"/>
     </div>
     <div class="row">
       <div class="d-flex content_text  justify-content-center">
-
         <form action="" method="POST"> {% csrf_token %}
           
           <div class="fs-6 text-white">Subject</div>
@@ -103,24 +98,18 @@ href="{% static 'web/css/bootstrap.min.css' %}"/>
           <div class="submit-button-wrapper"> 
           <input type="submit" value="Send Message" />    
           </div> 
-
+          
         </form>
       </div>
       <div class="col-12 d-flex justify-content-center mt-3 ">
         <p class="fs-6 text-white mt-3"> Mariusz Turek profile on <a href="https://www.linkedin.com/in/mariusz-turek-39214a71/ ">Linked in</a></p>
-
       </div>
       <div class="col-12 d-flex justify-content-center mt-3 ">
         <p class="fs-6 text-white mt-3"> email:turekpython@gmail.com</a></p>
-
       </div>
       <div class="col-12 d-flex justify-content-center mt-3 ">
         <p class="fs-6 text-white mt-3"> telefon: +48 795814298</a></p>
-
       </div>
-
-
-
     </div>
   </div>
 

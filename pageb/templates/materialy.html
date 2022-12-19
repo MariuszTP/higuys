@@ -1,4 +1,4 @@
-{% extends 'base1.html' %}
+{% extends 'base.html' %}
 
 {% load static %}
 
@@ -14,9 +14,9 @@
 
     <div class="col-12"  >
       <div class="row row-cols-2 row-cols-md-4 row-cols-xxl-5 justify-content-evenly">
-        {% for kategoria in kategoria %}
+        {% for category in categories %}
         <div class = "col bord1">
-          <a href="{% url 'materialy' %}?kategoria={{kategoria.id}}" class="text-center mx-auto d-block materials-buttons">{{kategoria.name}}</a>
+          <a href="{% url 'materialy' %}?cat={{category.id}}" class="text-center mx-auto d-block materials-buttons">{{category.name}}</a>
         </div>
         {% endfor %}
       </div> 
@@ -32,7 +32,7 @@
       <div class=" col ">
         <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal{{product.pk}}">
           <p class="text-center mt-5 ">{{ product.name }} </p>
-                <!--<img src="{{ product.image.url }}" class="figure-img mx-auto d-block rounded  mb-2" height="200px"> -->
+
           <img src="{{ product.image.url }}" class="figure-img mx-auto d-block rounded  mb-2" width="100%;">
         </a>
       </div>

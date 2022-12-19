@@ -11,17 +11,8 @@ from django.contrib import messages
 # Create your views here.
 
 
-def base(request):
-    return render(request, 'base1.html')
-
-def main1(request):
-    return render(request, 'index1.html')
-
-def main2(request):
-    return render(request, 'index2.html')
 
 def main(request):
-
     if request.method =="POST":
         subject = request.POST.get("subject")
         message = request.POST.get("message")
@@ -36,60 +27,28 @@ def main(request):
         From: {}
         '''.format(data['message'], data['from_email'])
         send_mail(data['subject'], message, '', ['turekpython@gmail.com'])
-
-
-    return render(request, 'index1.html')
-
-
-
-
+    return render(request, 'index.html')
 
 def opinion(request):
     if request.method =="POST":
         message = request.POST.get("opinion")
-        print(message)    
-        if len(message) > 20:
+        if len(message) > 2000:
             messages.warning(request,'Teks zbyt długi, max limit 2000 znaków')
-            return render(request, 'about.html')
+            return render(request, 'index.html')
         else:
-            wiadomosc = Opinion(name=message)
+            wiadomosc = Opinion(text=message)
             wiadomosc.save()
             messages.success(request,'wiadomosc wysłana')
-    return render(request, 'index1.html')
-
-
-def gallery1(request):
-    products = Gallery1.objects.all()
-    context = {'products': products}
-    return render(request, 'gallery1.html', context)
-
-def gallery2(request):
-    return render(request, 'gallery2.html')
-
-def gallery3(request):
-    products = Image3.objects.all()
-    context = {'products': products}
-    return render(request, 'gallery3.html', context)
-
-def gallery4(request):
-    products = Image3.objects.all()
-    context = {'products': products}
-    return render(request, 'gallery4.html', context)
-
-def gallery5(request):
-    products = Image3.objects.all()
-    context = {'products': products}
-    return render(request, 'gallery5.html', context)
-
+    return render(request, 'index.html')
 
 def materialy(request):
-    kategoria = Kategoria.objects.all()
-    kategory_id = request.GET.get('kategoria')
-    if kategory_id:
-        products = Gallery1.objects.filter(kategoria=kategory_id)
+    categories = Category.objects.all()
+    category_id = request.GET.get('cat')
+    if category_id:
+        products = Gallery.objects.filter(category = category_id)
     else:
-        products = Gallery1.objects.all()
-    context = {'products': products, 'kategoria': kategoria}
+        products = Gallery.objects.all()
+    context = {'products': products, 'categories': categories}
     return render(request, 'materialy.html', context)
 
 def about(request):
@@ -98,6 +57,5 @@ def about(request):
 def opinie(request):
     queryset = Opinion.objects.filter(approval=True)
     context = {'queryset': queryset}
-
     return render(request, 'opinion.html', context)
 

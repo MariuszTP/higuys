@@ -1,4 +1,4 @@
-{% extends 'base1.html' %}
+{% extends 'base.html' %}
 
 {% load static %}
 
@@ -9,11 +9,11 @@
 
 <div class="container d-grid gap-3 text-center about-container" style="background-color: rgba(52,59,67,255)">
   <div class="row">
-    <div class="col-12 mt-3" style="color:rgba(254,193,7,255)"; >
+    <div class="col-12 mt-3 mb-3" style="color:rgba(254,193,7,255)"; >
 
       {% for opinion in queryset %}
 
-        <li class="mt-5">{{opinion.name}}</li>  
+        <li class="mt-5">{{opinion.text}}</li>  
 
       {% endfor %}
 

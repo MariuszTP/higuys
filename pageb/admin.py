@@ -5,19 +5,14 @@ from .models import *
 # Register your models here.
 
 
-from .models import Kategoria
-admin.site.register(Kategoria)
+from .models import Category
+admin.site.register(Category)
 
 from .models import Opinion
 admin.site.register(Opinion)
 
-from .models import Gallery1
-admin.site.register(Gallery1)
-
-
-from .models import Image3
-admin.site.register(Image3)
-
+from .models import Gallery
+admin.site.register(Gallery)
 
 
 

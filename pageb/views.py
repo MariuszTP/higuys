@@ -43,9 +43,9 @@ def opinion(request):
 
 def materialy(request):
     categories = Category.objects.all()
-    category_id = request.GET.get('cat')
-    if category_id:
-        products = Gallery.objects.filter(category = category_id)
+    category_selected = request.GET.get('cat')
+    if category_selected:
+        products = Gallery.objects.filter(category = category_selected)
     else:
         products = Gallery.objects.all()
     context = {'products': products, 'categories': categories}
